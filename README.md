@@ -45,12 +45,8 @@ docker build -t mypythonimg .
 docker network create frontend
 docker run -d --name myaap --network frontend mypythonimg
 
-
-
-
-
-
 📌 Notes
-Make sure to update the proxy_pass IP in default.conf based on your container's internal IP or use container name if using Docker network.
-
-This setup is ideal for local development, learning Docker networking, and testing Flask microservices with a reverse proxy.
+Make sure to update the proxy_pass IP in default.conf based on your container's
+internal IP or use container name if using Docker network.
+This setup is ideal for local development, learning Docker networking,
+and testing Flask microservices with a reverse proxy.
